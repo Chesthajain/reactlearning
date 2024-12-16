@@ -24,7 +24,7 @@ class App extends React.Component {
               <h1>{'Welcome to react world'}</h1>
               {element}
               <Greeting message = "React lerner" />
-              
+              <h1>{`Hello, ${this.props.message}`}</h1>
           </div>
           
           </>
