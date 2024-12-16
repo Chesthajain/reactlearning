@@ -9,6 +9,12 @@ const element = React.createElement(
   {id:'login-btn'},
   'Login'
 )
+ //component
+
+function Greeting({ message }) {
+  return <h1>{`Hello, ${message}`}</h1>
+}
+
 
 class App extends React.Component {
   render() {
@@ -17,6 +23,8 @@ class App extends React.Component {
           <div>
               <h1>{'Welcome to react world'}</h1>
               {element}
+              <Greeting message = "React lerner" />
+              
           </div>
           
           </>
@@ -24,7 +32,6 @@ class App extends React.Component {
   }
   
 }
-
 
 
 export default App;
